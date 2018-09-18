@@ -1,0 +1,137 @@
+@import "../../../../../common-components/global-style/global-stylesheet";
+
+@secondMenu-height: 30px;
+
+.ivu-shrinkable-menu {
+  width: 100%;
+  height: 100%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  // 一级
+  .ivu-menu-item-group-title {
+    height: 30px;
+    line-height: 30px;
+    padding-left: 8px;
+    font-size: 11px;
+    color: @font-color-assist !important;
+  }
+
+  // 二级
+  .ivu-menu-submenu-title {
+    padding: 0 14px 0 24px;
+    height: @secondMenu-height;
+    line-height: @secondMenu-height;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    // 文字
+    .layout-text {
+      margin-left: 13px;
+      color: @font-color-assist;
+      font-size: @font-size-normal;
+    }
+
+    // 三角
+    .ivu-menu-submenu-title-icon {
+      top: 13px;
+      margin-right: 0;
+    }
+
+    // 开启三级菜单的情况下  二级菜单统一为横线
+    .position-hr {
+
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      position: relative;
+      top: -2px;
+      left: 5px;
+      margin-right: 13px;
+      transform: scale(1.9);
+
+      i {
+        float: left;
+      }
+    }
+  }
+
+  .position-hr {
+    transition: all .18s;
+  }
+
+  // 顶替
+  .ivu-menu-opened > * > .ivu-menu-submenu-title-icon {
+    transform: none;
+  }
+
+  .ivu-menu-dark.ivu-menu-vertical .ivu-menu-item-active:not(.ivu-menu-submenu) {
+    border-right: none;
+    background-image: @SSA-gradient;
+
+    .layout-text, .iconfont {
+      color: #fff !important;
+    }
+  }
+
+  .ivu-menu-dark.ivu-menu-vertical{
+
+    // 三级 hover
+    .ivu-menu-item:hover {
+      color: #4386F6;
+      .layout-text {
+        color: #4386F6;
+      }
+
+      .position-hr {
+        color: #4386F6;
+        font-size: 25px;
+      }
+    }
+
+
+    // 二级 hover
+    .ivu-menu-submenu-title:hover {
+      color: #fff;
+      .layout-text {
+        color: #fff;
+      }
+    }
+
+    .ivu-menu-opened{
+
+      .ivu-menu-item-selected{
+        .layout-text{
+          color: #4386F6!important;
+        }
+      }
+    }
+
+  }
+
+  .ivu-menu-item {
+    height: @secondMenu-height;
+    line-height: @secondMenu-height;
+    padding: 0 14px 0 24px;
+    .box-size();
+
+    & > i {
+      margin-top: 1px;
+    }
+
+    .layout-text {
+      margin-left: 13px;
+      color: @font-color-assist;
+      font-size: @font-size-normal;
+    }
+  }
+}
+
+.hide-dropdown-arrow {
+  .ivu-icon-ios-arrow-down {
+    display: none;
+  }
+}

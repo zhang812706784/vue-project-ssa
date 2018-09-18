@@ -1,0 +1,107 @@
+/*
+  前端样式库
+
+  Author: duanyc
+*/
+/**  告警等级  **/
+/**  字体大小相关  **/
+/**  深色主题字体颜色  **/
+/** SSA 按钮渐变 **/
+/**  辅助样式  **/
+.ivu-shrinkable-menu {
+  width: 100%;
+  height: 100%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.ivu-shrinkable-menu .ivu-menu-item-group-title {
+  height: 30px;
+  line-height: 30px;
+  padding-left: 8px;
+  font-size: 11px;
+  color: #D0D4D8 !important;
+}
+.ivu-shrinkable-menu .ivu-menu-submenu-title {
+  padding: 0 14px 0 24px;
+  height: 30px;
+  line-height: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.ivu-shrinkable-menu .ivu-menu-submenu-title .layout-text {
+  margin-left: 13px;
+  color: #D0D4D8;
+  font-size: 12px;
+}
+.ivu-shrinkable-menu .ivu-menu-submenu-title .ivu-menu-submenu-title-icon {
+  top: 13px;
+  margin-right: 0;
+}
+.ivu-shrinkable-menu .ivu-menu-submenu-title .position-hr {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  position: relative;
+  top: -2px;
+  left: 5px;
+  margin-right: 13px;
+  transform: scale(1.9);
+}
+.ivu-shrinkable-menu .ivu-menu-submenu-title .position-hr i {
+  float: left;
+}
+.ivu-shrinkable-menu .position-hr {
+  transition: all .18s;
+}
+.ivu-shrinkable-menu .ivu-menu-opened > * > .ivu-menu-submenu-title-icon {
+  transform: none;
+}
+.ivu-shrinkable-menu .ivu-menu-dark.ivu-menu-vertical .ivu-menu-item-active:not(.ivu-menu-submenu) {
+  border-right: none;
+  background-image: linear-gradient(to right, #8A00FF, #4189F6);
+}
+.ivu-shrinkable-menu .ivu-menu-dark.ivu-menu-vertical .ivu-menu-item-active:not(.ivu-menu-submenu) .layout-text,
+.ivu-shrinkable-menu .ivu-menu-dark.ivu-menu-vertical .ivu-menu-item-active:not(.ivu-menu-submenu) .iconfont {
+  color: #fff !important;
+}
+.ivu-shrinkable-menu .ivu-menu-dark.ivu-menu-vertical .ivu-menu-item:hover {
+  color: #4386F6;
+}
+.ivu-shrinkable-menu .ivu-menu-dark.ivu-menu-vertical .ivu-menu-item:hover .layout-text {
+  color: #4386F6;
+}
+.ivu-shrinkable-menu .ivu-menu-dark.ivu-menu-vertical .ivu-menu-item:hover .position-hr {
+  color: #4386F6;
+  font-size: 25px;
+}
+.ivu-shrinkable-menu .ivu-menu-dark.ivu-menu-vertical .ivu-menu-submenu-title:hover {
+  color: #fff;
+}
+.ivu-shrinkable-menu .ivu-menu-dark.ivu-menu-vertical .ivu-menu-submenu-title:hover .layout-text {
+  color: #fff;
+}
+.ivu-shrinkable-menu .ivu-menu-dark.ivu-menu-vertical .ivu-menu-opened .ivu-menu-item-selected .layout-text {
+  color: #4386F6!important;
+}
+.ivu-shrinkable-menu .ivu-menu-item {
+  height: 30px;
+  line-height: 30px;
+  padding: 0 14px 0 24px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.ivu-shrinkable-menu .ivu-menu-item > i {
+  margin-top: 1px;
+}
+.ivu-shrinkable-menu .ivu-menu-item .layout-text {
+  margin-left: 13px;
+  color: #D0D4D8;
+  font-size: 12px;
+}
+.hide-dropdown-arrow .ivu-icon-ios-arrow-down {
+  display: none;
+}

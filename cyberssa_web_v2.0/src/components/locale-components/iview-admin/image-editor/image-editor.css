@@ -1,0 +1,88 @@
+.image-editor .cropper {
+  box-sizing: border-box;
+  border: 1px solid #c3c3c3;
+  width: 100%;
+  height: 100%;
+}
+.image-editor .cropper img {
+  max-height: 100%;
+}
+.image-editor .fileinput {
+  display: none;
+}
+.image-editor .filelabel {
+  display: block;
+  padding: 6px 15px;
+  background: #2d8cf0;
+  display: inline-block;
+  border: 1px solid #2d8cf0;
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+  font-size: 12px;
+  text-align: center;
+  transition: all .2s;
+}
+.image-editor .filelabel:hover {
+  background: #5cadff;
+  border: 1px solid #5cadff;
+  transition: all .2s;
+}
+.image-editor-con1 {
+  height: 300px;
+}
+.image-editor-con1-preview-con {
+  width: 100% !important;
+  height: 200px !important;
+  border: 1px solid #c3c3c3;
+}
+.image-editor-con1-preview-con #preview1 {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.image-editor-con2 {
+  height: 300px;
+}
+.image-editor-con2 p {
+  font-size: 14px;
+  padding: 6px;
+  border-bottom: 1px solid #c3c3c3;
+}
+.image-editor-con2 p b {
+  display: inline-block;
+  width: 80px;
+}
+.image-editor-con3 {
+  height: 300px;
+}
+.image-editor-con3 .cropper3 {
+  box-sizing: border-box;
+  border: 1px solid #c3c3c3;
+  width: 100%;
+  height: 100%;
+}
+.image-editor-con3 .cropper3 img {
+  max-height: 100%;
+}
+.image-editor-con3-btn-box {
+  text-align: center;
+}
+.image-editor-con3 .filelabel3 {
+  width: 190px;
+  box-sizing: border-box;
+}
+.image-editor-con3 .crop3-btn-box {
+  text-align: center;
+}
+.image-editor-con3-preview-con {
+  width: 100% !important;
+  height: 300px !important;
+  border: 1px solid #c3c3c3;
+}
+.image-editor-con3-preview-con #preview3 {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+/*# sourceMappingURL=image-editor.css.map */

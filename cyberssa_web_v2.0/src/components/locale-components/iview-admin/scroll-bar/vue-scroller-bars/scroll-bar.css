@@ -1,0 +1,83 @@
+.vue-scroller-bars-wraper {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.vue-scroller-bars-wraper.show-when-hover .vue-scroller-bars-scroll {
+  opacity: 0;
+}
+.vue-scroller-bars-wraper.show-when-hover .vue-scroller-bars-place-holder {
+  opacity: 0;
+}
+.vue-scroller-bars-wraper.show-when-hover:hover .vue-scroller-bars-scroll {
+  opacity: 1;
+}
+.vue-scroller-bars-wraper.show-when-hover:hover .vue-scroller-bars-place-holder {
+  opacity: 1;
+}
+.vue-scroller-bars-content {
+  position: absolute;
+  min-width: 100%;
+  left: 0;
+  top: 0;
+}
+.vue-scroller-bars-scroll {
+  position: relative;
+  transition: opacity .3s ease .2s;
+  background: #fafafa;
+  box-sizing: border-box;
+  padding: 1px 2px;
+  z-index: 9999999;
+}
+.vue-scroller-bars-scroll:hover .vue-scroller-bars-scroll-bar {
+  background: #646464;
+}
+.vue-scroller-bars-scroll-y {
+  width: 14px;
+  height: 100%;
+  float: right;
+  border-left: 1px solid rgba(190, 190, 190, 0.5);
+  border-right: 1px solid rgba(190, 190, 190, 0.5);
+}
+.vue-scroller-bars-scroll-y.scroll-y-cover {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+.vue-scroller-bars-scroll-x {
+  width: 100%;
+  height: 14px;
+  float: right;
+  border-top: 1px solid rgba(190, 190, 190, 0.5);
+  border-bottom: 1px solid rgba(190, 190, 190, 0.5);
+}
+.vue-scroller-bars-scroll-x.scroll-x-cover {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+}
+.vue-scroller-bars-scroll-bar {
+  background: #bebebe;
+  position: absolute;
+  border-radius: 4px;
+  transition: background .2s ease;
+}
+.vue-scroller-bars-scroll-bar-y {
+  width: calc(100% - 4px);
+  min-height: 14px;
+}
+.vue-scroller-bars-scroll-bar-x {
+  height: calc(100% - 4px);
+  min-width: 14px;
+}
+.vue-scroller-bars-place-holder {
+  position: absolute;
+  transition: opacity .3s ease .2s;
+  right: 0px;
+  bottom: 0px;
+  width: 14px;
+  height: 14px;
+  background: #fafafa;
+}
+/*# sourceMappingURL=scroll-bar.css.map */

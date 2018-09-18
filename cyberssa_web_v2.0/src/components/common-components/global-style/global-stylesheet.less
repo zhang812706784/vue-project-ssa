@@ -1,0 +1,67 @@
+/*
+  前端样式库
+
+  Author: duanyc
+*/
+
+/**  告警等级  **/
+
+// 信息
+@alarm_default: #A1A1A1;
+
+// 通知
+@alarm_success: #49BC34;
+
+// 信息
+@alarm_info: #2A7CF7;
+
+// 警示
+@alarm_warning: #FFBD20;
+
+// 错误
+@alarm_error: #FF9620;
+
+// 严重
+@alarm_important: #FF6920;
+
+// 告警
+@alarm_alarm: #FF0000;
+
+// 紧急
+@alarm_urgency: #CE0010;
+
+/**  字体大小相关  **/
+
+@font-family-base: "Microsoft YaHei";
+
+@font-size-base: 12px;
+
+@font-size-t1: floor((@font-size-base * 2.17)); // ~26px
+
+@font-size-t2: @font-size-base + 4; // 16px
+
+@font-size-t3: @font-size-base + 2; // 14px
+
+@font-size-normal: @font-size-base; // 12px
+
+/**  深色主题字体颜色  **/
+
+// 正常
+@font-color-normal: #fff;
+
+// 辅助性文字1
+@font-color-assist: #D0D4D8;
+
+// 辅助性文字2
+@font-color-assist2: #888;
+
+/** SSA 按钮渐变 **/
+@SSA-gradient: linear-gradient(to right, #8A00FF, #4189F6);
+
+/**  辅助样式  **/
+
+.box-size(@val:border-box) {
+  -webkit-box-sizing: @val;
+  -moz-box-sizing: @val;
+  box-sizing: @val;
+}

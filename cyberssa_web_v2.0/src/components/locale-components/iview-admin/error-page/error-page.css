@@ -1,0 +1,21 @@
+.error-page-show {
+  width: 100%;
+  height: 180px;
+  transform: scale(0.4);
+}
+.error-page-cover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+.error-page-intro-con {
+  height: 180px;
+}
+.error-page-intro-con p {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+/*# sourceMappingURL=error-page.css.map */

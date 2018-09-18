@@ -1,0 +1,405 @@
+@import "../components/common-components/global-style/global-stylesheet";
+
+.margin-top-8 {
+  margin-top: 8px;
+}
+
+.margin-top-10 {
+  margin-top: 10px;
+}
+
+.margin-top-20 {
+  margin-top: 20px;
+}
+
+.margin-left-10 {
+  margin-left: 10px;
+}
+
+.margin-bottom-10 {
+  margin-bottom: 10px;
+}
+
+.margin-bottom-100 {
+  margin-bottom: 100px;
+}
+
+.margin-right-10 {
+  margin-right: 10px;
+}
+
+.padding-left-6 {
+  padding-left: 6px;
+}
+
+.padding-left-8 {
+  padding-left: 5px;
+}
+
+.padding-left-10 {
+  padding-left: 10px;
+}
+
+.padding-left-20 {
+  padding-left: 20px;
+}
+
+.height-100 {
+  height: 100%;
+}
+
+.height-120px {
+  height: 100px;
+}
+
+.height-echart {
+  height: 240px;
+}
+
+.height-120px {
+  height: 100px;
+}
+
+.height-200px {
+  height: 200px;
+}
+
+.height-492px {
+  height: 492px;
+}
+
+.height-460px {
+  height: 460px;
+}
+
+.line-gray {
+  height: 0;
+  border-bottom: 2px solid #dcdcdc;
+}
+
+.notwrap {
+  word-break: keep-all;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.padding-left-5 {
+  padding-left: 10px;
+}
+
+[v-cloak] {
+  display: none;
+}
+
+body {
+  font-family: "Microsoft YaHei" !important;
+}
+
+/** 以下内容为SSA需要 **/
+
+// 取消默认黑色背景 如不需要 删除该class
+.ivu-menu-dark, .ivu-menu {
+  background: transparent;
+}
+
+// 取消默认菜单样式
+.ivu-menu-dark.ivu-menu-vertical {
+
+  .ivu-menu-opened {
+    background: transparent;
+
+    .ivu-menu-submenu-title {
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px;
+      color: #4386F6;
+      background: transparent;
+      //background-image: @SSA-gradient;
+
+      .layout-text {
+        color: #4386F6;
+      }
+
+      &:hover {
+        color: #4386F6 !important;
+
+        .layout-text {
+          color: #4386F6;
+        }
+      }
+    }
+  }
+
+  .ivu-menu-item {
+
+    &:hover {
+      color: #4386F6 !important;
+      background: transparent;
+    }
+  }
+
+  .ivu-menu-submenu {
+    .ivu-menu-item-active {
+      color: #4386F6;
+      background: transparent !important;
+
+      .layout-text {
+        color: #4386F6;
+      }
+
+      .position-hr {
+        font-size: 25px;
+      }
+    }
+  }
+
+}
+
+.ivu-menu-dark.ivu-menu-vertical .ivu-menu-submenu .ivu-menu-item-active, .ivu-menu-dark.ivu-menu-vertical .ivu-menu-submenu .ivu-menu-item-active:hover {
+  background: transparent !important;
+}
+
+.ivu-menu-submenu {
+
+  .ivu-menu-submenu-title {
+    &:hover {
+      background-color: transparent !important;
+    }
+  }
+
+}
+
+// 滚动条优化
+.vue-scroller-bars-scroll {
+  background: rgba(255, 255, 255, .1) !important;
+  border: 0 none !important;
+}
+
+.vue-scroller-bars-scroll-bar {
+  background: rgba(255, 255, 255, .4) !important;
+  //background: red !important;
+  border-radius: 0 !important;
+}
+
+// 滚动条
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px
+}
+
+::-webkit-scrollbar-button {
+  height: 0;
+  width: 0
+}
+
+// 轨道背景
+::-webkit-scrollbar-track {
+  background-color: rgba(255, 255, 255, .1)
+}
+
+// 滑块
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, .2)
+}
+
+// 表格
+.ivu-table-wrapper {
+  border: 1px solid rgba(255, 255, 255, .2);
+
+  .ivu-table-cell {
+    color: #fff !important;
+  }
+
+  .ivu-table {
+    background: transparent;
+
+    &:before, &:after {
+      background-color: transparent;
+    }
+
+    th {
+      background-color: transparent !important;
+    }
+
+    td {
+      //background: rgba(255, 255, 255, .2);
+      background: transparent;
+    }
+
+    .ivu-table-tbody {
+
+      tr {
+        &:hover {
+          background: rgba(255, 255, 255, .2);
+        }
+      }
+    }
+
+  }
+
+  .ivu-table-stripe .ivu-table-body tr:nth-child(2n) td, .ivu-table-stripe .ivu-table-fixed-body tr:nth-child(2n) td {
+    background-color: rgba(255, 255, 255, .2);
+  }
+
+  .ivu-table-stripe .ivu-table-body tr.ivu-table-row-hover td, .ivu-table-stripe .ivu-table-fixed-body tr.ivu-table-row-hover td, tr.ivu-table-row-hover td {
+    background-color: rgba(255, 255, 255, .1);
+  }
+}
+
+.ivu-table-border td, .ivu-table-border th {
+  border-right: 1px solid rgba(255, 255, 255, .2);
+}
+
+.ivu-table td, .ivu-table th {
+  border-bottom: 1px solid rgba(255, 255, 255, .2);
+}
+
+//Begin : 覆盖iview样式,与老代码界面风格保持一致 Add by zhengmengfei
+//设置当前激活界面title下label为颜色为CC0033
+.ivu-tabs-ink-bar {
+  background-color: #CC0033;
+}
+
+//设置标题名称颜色为fff
+.ivu-tabs-tab {
+  color: #fff;
+}
+
+.ivu-tabs-nav .ivu-tabs-tab-active {
+  color: #fff;
+}
+
+.ivu-tabs-tab:hover {
+  color: #fff !important;
+}
+
+//去掉标题下边的border-bottom
+.ivu-tabs-bar {
+  border-bottom: none;
+}
+
+//设置背景
+.main {
+  .single-page-con {
+    background: none;
+  }
+}
+
+.ivu-tabs.ivu-tabs-card > .ivu-tabs-bar .ivu-tabs-tab {
+  background: rgba(255, 255, 255, 0.05);
+  border: none;
+  border-radius: 0 0 0 0;
+}
+
+.ivu-tabs.ivu-tabs-card > .ivu-tabs-bar .ivu-tabs-tab-active {
+  background: rgba(255, 255, 255, 0.3);
+  color: #D0D0D0;
+}
+
+.ivu-btn {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: none;
+  border-radius: 0 0 0 0;
+  color: #fff;
+}
+
+.ivu-btn:hover {
+  background: rgba(204, 204, 204, 0.3);
+  color: #D0D0D0
+}
+
+.ivu-btn.active {
+  background: rgba(204, 204, 204, 0.3);
+  color: #D0D0D0
+}
+
+.ivu-date-picker {
+  .ivu-date-picker-rel {
+    .ivu-date-picker-editor {
+      .ivu-input {
+        background-color: transparent;
+        //background-color: #0B0C21;
+        border: 1px solid #ccc;
+        top: 1px;
+        height: 27px;
+      }
+      .ivu-input-icon {
+        color: #ccc;
+      }
+    }
+  }
+  .ivu-select-dropdown {
+    background-color: #0B0C21;
+  }
+}
+
+.ivu-date-picker-cells-cell {
+  em {
+    color: #ccc;
+  }
+}
+
+.ivu-date-picker-cells-cell-next-month em, .ivu-date-picker-cells-cell-prev-month em {
+  color: #fff;
+}
+
+.main .single-page-con .single-page {
+  height: 100%;
+  margin: 0 10px;
+}
+
+//End : 覆盖iview样式,与老代码界面风格保持一致 Add by zhengmengfei
+.ivu-modal-content {
+  background-color:#0b0c21;
+
+  .ivu-modal-header
+  {
+    border-bottom: 0 solid #0b0c21;
+  }
+  .ivu-modal-footer{
+    border-top: 0 solid #0b0c21;
+  }
+}
+
+// 继续替换样式 duanyc
+.ivu-page-next, .ivu-page-prev {
+  background-color: transparent;
+  border: none;
+
+  &:hover {
+    color: #fff;
+  }
+}
+
+.ivu-page-item {
+  background-color: transparent;
+  border: none;
+
+  &:hover {
+    a {
+      color: #fff;
+    }
+  }
+}
+
+.ivu-page-item-jump-next {
+  border: none;
+}
+
+.ivu-page-next {
+  &:hover {
+    a {
+      color: #fff;
+    }
+  }
+}
+
+.ivu-page-item-jump-prev, .ivu-page-item-jump-next {
+  border: none;
+  a {
+    color: #fff;
+  }
+}
+
+// 继续替换样式 duanyc

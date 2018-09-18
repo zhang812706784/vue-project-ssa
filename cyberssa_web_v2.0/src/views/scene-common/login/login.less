@@ -1,0 +1,137 @@
+@import "../../../components/common-components/global-style/global-stylesheet";
+
+.login {
+  width: 100%;
+  height: 100%;
+  //background-image: url('/static/images/login/login-bg.png');
+  //background-size: cover;
+  //background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+
+  &-con {
+    width: 850/2px;
+    height: 961/2px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, .6);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    //position: absolute;
+    //right: 160px;
+    //top: 50%;
+    //transform: translateY(-60%);
+    //width: 300px;
+
+    .ivu-card {
+      background-color: transparent;
+
+      .ivu-card-head {
+        //height: 278/2px;
+        margin-bottom: 65/2px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        border-bottom: none;
+
+        .header {
+          height: 100%;
+
+          .logo-container {
+            height: 149/2px;
+            padding-top: 5px;
+            margin-bottom: 68/2px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            span {
+              display: block;
+              width: 287/2px;
+              height: 85/2px;
+              color: #000;
+              background: url("../../../../static/images/login/6cloud@2x.png") 0 0 no-repeat;
+              -webkit-background-size: 100% 100%;
+              background-size: 100% 100%;
+            }
+          }
+
+          .detail {
+            user-select: none;
+            display: block;
+            width: 100%;
+            color: #fff;
+            font-size: 22px;
+            text-align: center;
+          }
+        }
+      }
+
+      .ivu-card-body {
+        padding: 0 45px 0;
+
+        .ivu-input-group-prepend {
+          display: none;
+        }
+
+        .ivu-input-wrapper {
+
+          .ivu-icon {
+            top: 8px;
+            right: 10px;
+          }
+
+          .ivu-input {
+            //width: 660/2px;
+            height: 96/2px;
+            padding-left: 25px;
+            border-radius: 3px !important;
+            font-size: 14px;
+            color: #fff;
+            background-color: transparent;
+
+          }
+        }
+
+        .btn-container {
+          text-align: center;
+          margin-top: 70/2px;
+
+          .ivu-btn {
+            width: 660/2px;
+            height: 104/2px;
+            border: none;
+            background-image: @SSA-gradient;
+
+            span {
+              color: #fff;
+              font-size: 14px;
+            }
+          }
+        }
+
+      }
+    }
+
+    &-header {
+      font-size: 16px;
+      font-weight: 300;
+      text-align: center;
+      padding: 30px 0;
+    }
+    .form-con {
+      padding: 10px 0 0;
+    }
+    .login-tip {
+      font-size: 10px;
+      text-align: center;
+      color: #c3c3c3;
+    }
+  }
+
+}
